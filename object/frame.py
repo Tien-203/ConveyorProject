@@ -14,7 +14,7 @@ class Frame:
         self.data_from_server = None
 
     @classmethod
-    def new_frame(cls, image: np.ndarray, barcode: str = None):
+    def new_frame(cls, image: np.ndarray, barcode: List = None):
         return cls(image=image, barcode=barcode, config=cls.config)
 
     @property

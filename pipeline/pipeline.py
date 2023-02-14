@@ -4,7 +4,6 @@ from service.barcode_processing import BarcodeProcessor
 from service.camera_reader import CameraReader
 
 
-
 class PipeLine:
     def __init__(self, config: Config = None):
         self.camera_reader = CameraReader(config=config)

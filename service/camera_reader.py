@@ -32,7 +32,6 @@ class CameraReader:
             max_retries = 0
             cv2.namedWindow("output", cv2.WINDOW_NORMAL) 
             while self.buffer_manager.event:
-                print(222222222, self.buffer_manager.event)
                 ret, frame = self.cap.read()
                 if fault_count >= 200:
                     max_retries += 1

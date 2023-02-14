@@ -17,7 +17,7 @@ class BufferManager(metaclass=Singleton):
     def add_queue(self, queue_name: str):
         if queue_name not in self.list_queue:
             self.list_queue[queue_name] = Queue(maxsize=self.config.max_q_size)
-            self.logger.info(f"Sucessfully create Queue {queue_name}")
+            self.logger.info(f"Successfully create Queue {queue_name}")
         else:
             self.logger.info(f"{queue_name} already exists in list queue")
 
