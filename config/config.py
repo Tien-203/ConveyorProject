@@ -1,6 +1,8 @@
 import os
 import json
 
+
+## hahahaa
 from common.common import *
 from object.singleton import Singleton
 
@@ -14,3 +16,6 @@ class Config(metaclass=Singleton):
         return json.dumps({key: getattr(self, key)
                            for key in self.__dir__() if "__" != key[:2] and "__" != key[-2:] and key != "dict"}
                           , indent=4)
+
+    def abcdcs(self):
+        return ""
